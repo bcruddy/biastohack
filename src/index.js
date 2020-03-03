@@ -1,3 +1,4 @@
-import foo from './app';
+import * as pendo from './pendo';
 
-foo();
+pendo.install();
+pendo.initialize('ruddy@pendo.io', 'pendo');
