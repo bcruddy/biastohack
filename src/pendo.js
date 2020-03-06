@@ -21,6 +21,9 @@ export function initialize (visitorId, accountId) {
         },
         account: {
             id: accountId
+        },
+        sanitizeUrl (url) {
+            return url.replace(/http:\/\/localhost:[\d]+/, 'https://biastohack.com')
         }
     });
 }

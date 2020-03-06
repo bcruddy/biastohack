@@ -11,6 +11,7 @@ install:
   - npm ci;
 script:
   - npm run build;
+  - echo biastohack.com > dist/CNAME;
 deploy:
   provider: pages
   skip_cleanup: true
